@@ -17,5 +17,10 @@ namespace CDShop.DataAccess.Repository
         {
             _db = db;
         }
+
+        public ApplicationUser? GetApplicationUserByName(String Name)
+        {
+            return _db.ApplicationUsers.FirstOrDefault(p => String.Equals(p.Name, Name));
+        }
     }
 }

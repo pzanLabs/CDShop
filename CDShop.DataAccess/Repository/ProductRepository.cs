@@ -1,6 +1,7 @@
 ﻿using CDShop.DataAccess.Data;
 using CDShop.DataAccess.Repository.IRepository;
 using CDShop.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,10 @@ namespace CDShop.DataAccess.Repository
         public ProductRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
+        }
+        public Product? GetProductById(int id)
+        {
+            return _db.Products.FirstOrDefault(p => p.Id == id);
         }
 
         public void Update(Product obj)
