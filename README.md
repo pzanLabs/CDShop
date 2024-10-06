@@ -137,5 +137,5 @@ dotnet test
 ```
 
 ### Example Tests:
-- [**ProductControllerTests**]("CDShop.Tests/Controllers/ProductControllerTests.cs"): Ensures correct behavior for product creation, updating, deletion, and retrieval.
-- [**ProductRepositoryTests**]("CDShop.Tests/Repositories/ProductRepositoryTests.cs"): Tests for handling product addition to the database.
+- [**ProductControllerTests**](CDShop.Tests/Controllers/ProductControllerTests.cs): Ensures correct behavior for product creation, updating, deletion, and retrieval.
+- [**ProductRepositoryTests**](CDShop.Tests/Repositories/ProductRepositoryTests.cs): Tests for handling product addition to the database.
