@@ -27,6 +27,7 @@
     <ProjectReference Include="..\CDShop.DataAccess\CDShop.DataAccess.csproj" />
     <ProjectReference Include="..\CDShop.Models\CDShop.Models.csproj" />
     <ProjectReference Include="..\CDShop.Utility\CDShop.Utility.csproj" />
+	<ProjectReference Include="..\CDShopWeb\CDShopWeb.csproj" />
   </ItemGroup>
 
 </Project>
